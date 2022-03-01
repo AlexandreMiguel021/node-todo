@@ -14,12 +14,18 @@ Na construção do APP foi utilizado a arquitura MVC para melhor organização e
 ### 📲 _Design responsivo_
 
 <br>
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948200785748045864/img-1.png">
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948200785907437608/img-2.png">
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786201034762/img-3.png">
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786448515143/img-4.png">
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786716942356/img-5.png">
-<img style="width: 350px;" src="https://cdn.discordapp.com/attachments/922557394419056671/948207406423347270/todo-mobile.png">
+  
+| Início  | Criando tarefa |
+|----------|----------|
+| <img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948200785748045864/img-1.png"> |  <img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948200785907437608/img-2.png"> 
+
+|  Lista de Todas tarefas | Visualizando a descrição da tarefa |
+|----------|----------|
+| <img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786201034762/img-3.png"> |  <img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786448515143/img-4.png">
+
+| Editando uma tarefa | Mobile |
+|----------|----------|
+|<img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948200786716942356/img-5.png"> |  <img width="400px" src="https://cdn.discordapp.com/attachments/922557394419056671/948207406423347270/todo-mobile.png">
 
 ---
 
