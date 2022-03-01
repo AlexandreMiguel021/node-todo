@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+/* default */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* variables */
+
+:root {
+  --bg-gradient: linear-gradient(121deg, #386641, #a7c957);
+  --may-green: #6a994e;
+  --hunter-green: #386641;
+  --android-green: #a7c957;
+  --eggshell: #f2e8cf;
+  --orange-soda: #f06543;
+}
+
+/* header */
+
+.header {
+  background-color: var(--hunter-green);
+  color: var(--eggshell);
+  height: 80px;
+  display: flex;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  justify-content: space-around;
+}
+
+.logo__title {
+  font-size: 30px;
+  flex: 1;
+}
+
+.logo__img {
+  background-color: #a7c957;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  border: 3px solid var(--may-green);
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__items {
+  list-style: none;
+  padding: 0.3rem;
+  margin: 0 0.3rem;
+}
+
+.nav__links {
+  text-decoration: none;
+  color: var(--eggshell);
+  font-size: 18px;
+}
+
+.nav__links:hover {
+  display: block;
+  -moz-transform: translate(0px, -6px);
+  -webkit-transform: translate(0px, -6px);
+  -o-transform: translate(0px, -6px);
+  -ms-transform: translate(0px, -6px);
+  transform: translate(0px, -6px);
+  transition: all 0.3s ease-out;
+}
+
+/* tasks/add */
+
+.title {
+  padding: 1rem;
+  text-align: center;
+  color: var(--hunter-green);
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: var(--may-green);
+  margin: 2rem auto;
+}
+
+.title__task {
+  color: var(--orange-soda);
+}
+
+.form {
+  margin: auto;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+
+.form__input,
+.form__textarea {
+  padding: 0.6rem 0.2rem;
+  font-size: 16px;
+  background-color: var(--android-green);
+  border: none;
+  outline: none;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  background-color: var(--android-green);
+  opacity: 0.9;
+  transition: ease 0.2s;
+}
+
+.form__label {
+  margin-bottom: 0.4rem;
+  font-size: 18px;
+}
+
+.form__button {
+  padding: 0.6rem 0;
+  background-color: var(--orange-soda);
+  border: none;
+  color: var(--eggshell);
+  font-size: 16px;
+  cursor: pointer;
+}
+.form__button:hover {
+  background-color: var(--orange-soda);
+  opacity: 0.8;
+  transition: linear 0.2s;
+}
+
+/* all-tasks */
+
+.tasks {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tasks__container {
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  padding-left: 0;
+  box-shadow: 1px 8px 20px rgba(68, 68, 68, 0.384);
+  border-radius: 2px;
+  height: 70px;
+  background-color: var(--android-green);
+}
+
+.tasks__items {
+  min-width: 200px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.tasks__list div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasks__actions {
+  min-width: 150px;
+  display: flex;
+}
+
+.task__title {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+
+.tasks__icons,
+.tasks__btn {
+  font-size: 24px;
+  color: black;
+  padding: 0 0.8rem;
+  background-color: var(--android-green);
+  border: none;
+  cursor: pointer;
+}
+
+.tasks__container form {
+  padding: 0;
+}
+
+.tasks__icons:hover {
+  -moz-transform: translate(0px, 3px);
+  -webkit-transform: translate(0px, 3px);
+  -o-transform: translate(0px, 3px);
+  -ms-transform: translate(0px, 3px);
+  transform: translate(0px, 3px);
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.tasks__details {
+  margin: 0;
+
+  height: 25px;
+}
+
+.description__container {
+  background: var(--android-green);
+  padding: 0.3rem;
+  border-bottom: 2px solid var(--hunter-green);
+  margin-top: 0.6rem;
+  position: relative;
+  z-index: 1;
+  width: 500px;
+}
+
+@media screen and (max-width: 580px) {
+  .header .container {
+    flex-direction: column;
+  }
+
+  .header {
+    height: 150px;
+  }
+
+  .nav__list {
+    width: 200px;
+    justify-content: space-between;
+  }
+
+  .description__container {
+    width: 100%;
+  }
+
+  .tasks__container {
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+    padding-right: 0;
+    margin: 1rem auto;
+  }
+
+  .tasks__actions {
+    margin: 0 auto;
+  }
+
+  .task__title {
+    margin: 0;
+  }
+
+  .tasks__items {
+    margin: 0.3rem auto;
+  }
+}

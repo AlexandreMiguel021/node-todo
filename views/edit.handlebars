@@ -1,0 +1,15 @@
+<h1 class="title">Editando a Tarefa: <span class='title__task'>{{task.title}}</span></h1>
+<form class='form' action="/edit" method='post'>
+  <input type="hidden" name="id" value="{{task.id}}">
+  <div class="form__container">
+    <label class="form__label" for="">Título:</label>
+    <input class="form__input" type="text" name='title' value="{{task.title}}">
+  </div>
+  <div class="form__container">
+    <label for="" class="form__label">Descrição:</label>
+    <textarea class="form__textarea" maxlength='240' name="description">{{task.description}}</textarea>
+  </div>
+  <div class="form__container">
+    <button class="form__button" type="submit">Editar</button>
+  </div>
+</form>

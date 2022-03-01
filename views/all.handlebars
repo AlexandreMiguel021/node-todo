@@ -1,0 +1,42 @@
+{{#if tasks}}
+<h1 class="title">Todas as Tarefas</h1>
+{{else}}
+<h1 class="title">Não há tarefas :)</h1>
+{{/if}}
+<div class="tasks">
+  <ul class="tasks__list">
+    {{#each tasks}}
+    <div class="tasks__container">
+      <li class="tasks__items">
+        <details class="tasks__details">
+          {{#if this.done}}
+          <summary class="task__title completed">
+            {{this.title}}
+          </summary>
+          {{else}}
+          <summary class="task__title">
+            {{this.title}}
+          </summary>
+          {{/if}}
+          <div class="description__container">
+            <p>{{this.description}}</p>
+          </div>
+        </details>
+      </li>
+      <div class="tasks__actions">
+        <form class="tasks__icons" action="/updatestatus" method='post'>
+          <input type="hidden" name="id" value="{{this.id}}">
+          <input type="hidden" name="done" value="{{this.done}}">
+          <button class='tasks__btn' type='submit'><i class="bi bi-check2-square"></i></button>
+        </form>
+        <form class="tasks__icons" action="/remove" method='post'>
+          <input type="hidden" name='id' value='{{this.id}}'>
+          <button class='tasks__btn' type="submit"><i class="bi bi-trash"></i></button>
+        </form>
+        <a class="tasks__icons pencil" href="/edit/{{this.id}}"><i class="bi bi-pencil-square"></i>
+        </a>
+      </div>
+    </div>
+    {{/each}}
+  </ul>
+</div>
