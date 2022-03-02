@@ -63,13 +63,13 @@ _Em seu banco de dados MySQL, é preciso criar um schema com o nome nodemvc onde
 $ git clone
 
 # acesse a pasta do projeto no terminal
-$ cd
+$ cd node-todo
 
 # instale as dependências
-$ yarn
+$ npm i
 
 # Execute a aplicação em modo de desenvolvimento
-$ yarn start
+$ npm start
 
 ```
 
